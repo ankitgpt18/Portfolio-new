@@ -4,15 +4,15 @@ import Image from 'next/image'
 import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
 
 const skills = [
-    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-    { name: 'Bun', icon: 'https://user-images.githubusercontent.com/709451/182802334-d9c42afe-f35d-4a7b-86ea-9985f73f20c3.png' },
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+    { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
+    { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' },
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
     { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-    { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-    { name: 'Prisma', icon: 'https://cdn.worldvectorlogo.com/logos/prisma-3.svg' },
+    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
 ]
 
 export default function AboutMe() {
@@ -31,7 +31,7 @@ export default function AboutMe() {
                     <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src="/images/about-me.jpg"
-                            alt="Atharvsinh Jadav"
+                            alt="Ankit Gupta"
                             width={192}
                             height={192}
                             className="w-full h-full object-cover"
@@ -44,12 +44,12 @@ export default function AboutMe() {
                 <div className="flex-1">
                     {/* Name */}
                     <h3 className="text-2xl sm:text-3xl font-[family-name:var(--font-instrument-serif)] text-black dark:text-white mb-4">
-                        Atharvsinh Jadav
+                        Ankit Gupta
                     </h3>
 
                     {/* Bio */}
                     <p className="text-neutral-600 dark:text-neutral-400 text-sm sm:text-base leading-relaxed mb-6">
-                        I&apos;m a Full Stack web developer, Open Source Contributor. Also a Student, 15 Years. I love building products to solve real-world problems. I&apos;m specialized in building MVP&apos;s.
+                        I&apos;m a B.Tech student passionate about AI, ML, and solving real-world problems through code. I build clean, interactive ML systems with models, pipelines, and RAG. Currently exploring Applied AI including GenAI and AI agents.
                     </p>
 
                     {/* Skills */}

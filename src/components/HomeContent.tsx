@@ -42,14 +42,14 @@ export default function NewHeroSection() {
           {/* Profile Header */}
           <Reveal delay={0.2}>
             <ProfileHeader
-              name="Atharvsinh Jadav"
-              age="15"
-              title="Developer • Builder • Web Dev"
+              name="Ankit Gupta"
+              age="B.Tech Student"
+              title="AI/ML Developer • Builder"
               profileImage="/pfp.jpg"
               socialLinks={{
-                twitter: "https://x.com/athrix_codes",
-                github: "https://github.com/Atharvsinh-codez",
-                linkedin: "https://www.linkedin.com/in/atharvsinh-jadav/",
+                twitter: "https://x.com/100dys_",
+                github: "https://github.com/ankitgpt18",
+                linkedin: "https://www.linkedin.com/in/ankitxgpt/",
               }}
             />
           </Reveal>
@@ -60,7 +60,7 @@ export default function NewHeroSection() {
               {/* Current Role Section */}
               <Reveal delay={0.1}>
                 <ContentSection
-                  subtitle="AI Engineer | Full-stack Developer"
+                  subtitle="AI/ML Developer | B.Tech Student"
                   title=''
                   className="mt-6"
                 >
@@ -76,7 +76,7 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <ContentSection className="pb-6 sm:pb-8 pt-4 sm:pt-6 px-2 sm:px-0">
                   <ContentParagraph className="mb-4 text-base sm:text-lg">
-                    <span className="font-medium dark:text-white text-black">I build from zero.</span> Whether it&apos;s frontend, backend, full-stack applications, or AI-powered experiences, I work across the entire development lifecycle. From UI/UX to deployment to user feedback, I care less about technology debates and more about delivering results that people love using.
+                    <span className="font-medium dark:text-white text-black">I build clean, interactive ML systems.</span> Whether it&apos;s models, pipelines, RAG systems, or AI agents — I work across the entire AI development lifecycle. From data to deployment, I care less about technology debates and more about delivering intelligent, real-world products that people love using.
                   </ContentParagraph>
 
                   {/* Spotify Player */}
@@ -134,7 +134,7 @@ export default function NewHeroSection() {
 
                   {/* GitHub Activity Heatmap */}
                   <div className="px-4 mb-4 sm:mb-6">
-                    <GitHubActivity username="Atharvsinh-codez" />
+                    <GitHubActivity username="ankitgpt18" />
                   </div>
                 </div>
               </Reveal>

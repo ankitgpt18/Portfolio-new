@@ -7,33 +7,29 @@ import Image from "next/image";
 // Tech Stack Data
 const techStack = [
   // Languages
-  { name: "JavaScript", category: "language", icon: "/tech-icons/javascript.svg", color: "bg-gray-500" },
-  { name: "TypeScript", category: "language", icon: "/tech-icons/typescript.svg", color: "bg-gray-500" },
-  { name: "Java", category: "language", icon: "/tech-icons/java.svg", color: "bg-gray-500" },
   { name: "Python", category: "language", icon: "/tech-icons/python.svg", color: "bg-gray-500" },
+  { name: "C", category: "language", icon: "/tech-icons/c.svg", color: "bg-gray-500" },
+  { name: "C++", category: "language", icon: "/tech-icons/cplusplus.svg", color: "bg-gray-500" },
+  { name: "Java", category: "language", icon: "/tech-icons/java.svg", color: "bg-gray-500" },
+  { name: "JavaScript", category: "language", icon: "/tech-icons/javascript.svg", color: "bg-gray-500" },
   { name: "SQL", category: "language", icon: "/tech-icons/sql.svg", color: "bg-gray-500" },
   
-  // Frameworks & Libraries
-  { name: "React.js", category: "framework", icon: "/tech-icons/react.svg", color: "bg-gray-500" },
-  { name: "Next.js", category: "framework", icon: "/tech-icons/nextjs.svg", color: "bg-gray-500" },
-  { name: "Express.js", category: "framework", icon: "/tech-icons/express.svg", color: "bg-gray-500" },
-  { name: "Node.js", category: "framework", icon: "/tech-icons/nodejs.svg", color: "bg-gray-500" },
-  { name: "FastAPI", category: "framework", icon: "/tech-icons/fastapi.svg", color: "bg-gray-500" },
-  { name: "Tailwind CSS", category: "framework", icon: "/tech-icons/tailwind.svg", color: "bg-gray-500" },
+  // AI/ML Frameworks
+  { name: "TensorFlow", category: "framework", icon: "/tech-icons/tensorflow.svg", color: "bg-gray-500" },
+  { name: "Keras", category: "framework", icon: "/tech-icons/keras.svg", color: "bg-gray-500" },
+  { name: "PyTorch", category: "framework", icon: "/tech-icons/pytorch.svg", color: "bg-gray-500" },
+  { name: "Scikit-learn", category: "framework", icon: "/tech-icons/scikitlearn.svg", color: "bg-gray-500" },
+  { name: "Pandas", category: "framework", icon: "/tech-icons/pandas.svg", color: "bg-gray-500" },
+  { name: "NumPy", category: "framework", icon: "/tech-icons/numpy.svg", color: "bg-gray-500" },
   
-  // Databases & Tools
-  { name: "MongoDB", category: "database", icon: "/tech-icons/mongodb.svg", color: "bg-gray-500" },
-  { name: "PostgreSQL", category: "database", icon: "/tech-icons/postgresql.svg", color: "bg-gray-500" },
-  { name: "Redis", category: "database", icon: "/tech-icons/redis.svg", color: "bg-gray-500" },
-  
-  // Developer Tools
-  { name: "Git", category: "tool", icon: "/tech-icons/Git.svg", color: "bg-gray-500" },
+  // DevOps & Tools
   { name: "Docker", category: "tool", icon: "/tech-icons/docker.svg", color: "bg-gray-500" },
-  { name: "Azure", category: "tool", icon: "/tech-icons/Azure.svg", color: "bg-gray-500" },
+  { name: "Kubernetes", category: "tool", icon: "/tech-icons/kubernetes.svg", color: "bg-gray-500" },
+  { name: "Git", category: "tool", icon: "/tech-icons/Git.svg", color: "bg-gray-500" },
   { name: "AWS", category: "tool", icon: "/tech-icons/AWS.svg", color: "bg-gray-500" },
   { name: "Google Cloud", category: "tool", icon: "/tech-icons/gcp.svg", color: "bg-gray-500" },
-  { name: "Jira", category: "tool", icon: "/tech-icons/Jira.svg", color: "bg-gray-500" },
-  { name: "Nix OS", category: "tool", icon: "/tech-icons/NixOS.svg", color: "bg-gray-500" },
+  { name: "MLflow", category: "tool", icon: "/tech-icons/mlflow.svg", color: "bg-gray-500" },
+  { name: "Linux", category: "tool", icon: "/tech-icons/linux.svg", color: "bg-gray-500" },
 ];
 
 interface TechIconProps {
@@ -92,7 +88,7 @@ export default function TechStackMarquee({ className = "" }: TechStackMarqueePro
           Stack I use
         </h2>
         <p className="text-sm sm:text-base dark:text-white/70 text-black/70 leading-relaxed">
-          Technologies I work with to build products that solve real problems
+          Technologies I work with to build intelligent systems and solve real problems
         </p>
       </div>
 

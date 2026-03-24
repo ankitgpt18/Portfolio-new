@@ -20,14 +20,14 @@ interface ProfileHeaderProps {
 }
 
 export default function ProfileHeader({
-  name = "Atharvsinh Jadav",
-  age = "15",
-  title = "Developer • Builder • Web Dev",
+  name = "Ankit Gupta",
+  age = "B.Tech Student",
+  title = "AI/ML Developer • Builder",
   profileImage = "/pfp.jpg",
   socialLinks = {
-    twitter: "https://x.com/athrix_codes",
-    github: "https://github.com/Atharvsinh-codez",
-    linkedin: "https://www.linkedin.com/in/atharvsinh-jadav/",
+    twitter: "https://x.com/100dys_",
+    github: "https://github.com/ankitgpt18",
+    linkedin: "https://www.linkedin.com/in/ankitxgpt/",
   }
 }: ProfileHeaderProps) {
   const { theme, setTheme } = useTheme();
