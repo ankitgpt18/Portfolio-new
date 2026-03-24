@@ -1,6 +1,16 @@
-import { neon } from '@neondatabase/serverless'
+import { neon, type NeonQueryFunction } from '@neondatabase/serverless'
 
-const sql = neon(process.env.DATABASE_URL!)
+let _sql: NeonQueryFunction<false, false> | null = null
+
+function getSql() {
+  if (!process.env.DATABASE_URL) {
+    throw new Error('DATABASE_URL is not set')
+  }
+  if (!_sql) {
+    _sql = neon(process.env.DATABASE_URL)
+  }
+  return _sql
+}
 
 export interface VisitorData {
   uniqueVisitors: number
@@ -17,7 +27,7 @@ export function generateVisitorId(ip: string | null, userAgent: string | null, f
 }
 
 export async function initVisitorTable(): Promise<void> {
-  await sql`
+  await getSql()`
     CREATE TABLE IF NOT EXISTS visitors (
       id SERIAL PRIMARY KEY,
       visitor_id TEXT UNIQUE NOT NULL,
@@ -29,14 +39,14 @@ export async function initVisitorTable(): Promise<void> {
 export async function trackVisit(visitorId: string): Promise<VisitorData> {
   try {
     // Insert visitor if not exists
-    await sql`
+    await getSql()`
       INSERT INTO visitors (visitor_id)
       VALUES (${visitorId})
       ON CONFLICT (visitor_id) DO NOTHING
     `
 
     // Get count
-    const result = await sql`SELECT COUNT(*) as count FROM visitors`
+    const result = await getSql()`SELECT COUNT(*) as count FROM visitors`
     const uniqueCount = parseInt(result[0]?.count || '0', 10)
 
     return { uniqueVisitors: uniqueCount }
@@ -48,7 +58,7 @@ export async function trackVisit(visitorId: string): Promise<VisitorData> {
 
 export async function getVisitorStats(): Promise<{ uniqueVisitors: number }> {
   try {
-    const result = await sql`SELECT COUNT(*) as count FROM visitors`
+    const result = await getSql()`SELECT COUNT(*) as count FROM visitors`
     const uniqueCount = parseInt(result[0]?.count || '0', 10)
     return { uniqueVisitors: uniqueCount }
   } catch (error) {
