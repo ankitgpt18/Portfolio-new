@@ -1,8 +1,8 @@
 'use client'
 import { FaLinkedin, FaXTwitter, FaGithub, FaPaperclip } from "react-icons/fa6";
+import { SiLeetcode, SiKaggle } from "react-icons/si";
 import { IoMdMail } from "react-icons/io";
 import { Tooltip } from "./ui/tooltip-card";
-import Image from "next/image";
 
 interface ReachoutProps {
   title?: string
@@ -13,6 +13,8 @@ interface ReachoutProps {
     github?: string
     linkedin?: string
     mail?: string
+    leetcode?: string
+    kaggle?: string
   }
 }
 
@@ -23,6 +25,8 @@ export default function Reachout({
     twitter: "https://x.com/100dys_",
     github: "https://github.com/ankitgpt18",
     linkedin: "https://www.linkedin.com/in/ankitxgpt/",
+    leetcode: "https://leetcode.com/u/ankitgpt/",
+    kaggle: "https://www.kaggle.com/ankitxgpt",
   }
 }: ReachoutProps) {
   return (
@@ -37,90 +41,73 @@ export default function Reachout({
           </p>
         </div>
 
-        <div className="flex justify-center sm:justify-start gap-3 sm:gap-3">
+        <div className="flex flex-wrap justify-start gap-3 sm:gap-3">
           {socialLinks.github && (
-            <Tooltip content={
-              <Image
-                width={3024}
-                height={1720}
-                src="/github.png"
-                alt="GitHub"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }>
+            <Tooltip content="GitHub Profile">
               <a
                 className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  WebkitTapHighlightColor: 'transparent',
-                  WebkitTouchCallout: 'none',
-                  WebkitUserSelect: 'none',
-                  userSelect: 'none'
-                }}
               >
-                <FaGithub className="text-[28px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <FaGithub className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
                 <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">GitHub</span>
               </a>
             </Tooltip>
           )}
 
           {socialLinks.twitter && (
-            <Tooltip content={
-              <Image
-                width={1206}
-                height={1220}
-                src="/twitter.png"
-                alt="Twitter"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }>
+            <Tooltip content="Twitter Profile">
               <a
                 className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
                 href={socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  WebkitTapHighlightColor: 'transparent',
-                  WebkitTouchCallout: 'none',
-                  WebkitUserSelect: 'none',
-                  userSelect: 'none'
-                }}
               >
-                <FaXTwitter className="text-[28px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <FaXTwitter className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
                 <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">Twitter</span>
               </a>
             </Tooltip>
           )}
 
           {socialLinks.linkedin && (
-            <Tooltip content={
-              <Image
-                width={1596}
-                height={1108}
-                src="/linkedin.png"
-                alt="LinkedIn"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }>
+            <Tooltip content="LinkedIn Profile">
               <a
                 className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  WebkitTapHighlightColor: 'transparent',
-                  WebkitTouchCallout: 'none',
-                  WebkitUserSelect: 'none',
-                  userSelect: 'none'
-                }}
               >
-                <FaLinkedin className="text-[28px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <FaLinkedin className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
                 <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">LinkedIn</span>
+              </a>
+            </Tooltip>
+          )}
+
+          {socialLinks.leetcode && (
+            <Tooltip content="LeetCode Profile">
+              <a
+                className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
+                href={socialLinks.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiLeetcode className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">LeetCode</span>
+              </a>
+            </Tooltip>
+          )}
+
+          {socialLinks.kaggle && (
+            <Tooltip content="Kaggle Profile">
+              <a
+                className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
+                href={socialLinks.kaggle}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiKaggle className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">Kaggle</span>
               </a>
             </Tooltip>
           )}
@@ -132,43 +119,22 @@ export default function Reachout({
                 href={socialLinks.mail}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  WebkitTapHighlightColor: 'transparent',
-                  WebkitTouchCallout: 'none',
-                  WebkitUserSelect: 'none',
-                  userSelect: 'none'
-                }}
               >
-                <IoMdMail className="text-[28px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <IoMdMail className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
                 <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">Mail</span>
               </a>
             </Tooltip>
           )}
 
           {socialLinks.resume && (
-            <Tooltip content={
-              <Image
-                width={1076}
-                height={1394}
-                src="/resume.png"
-                alt="Resume"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }>
+            <Tooltip content="Resume">
               <a
                 className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full touch-manipulation active:opacity-75"
                 href={socialLinks.resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  WebkitTapHighlightColor: 'transparent',
-                  WebkitTouchCallout: 'none',
-                  WebkitUserSelect: 'none',
-                  userSelect: 'none'
-                }}
               >
-                <FaPaperclip className="text-[28px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
+                <FaPaperclip className="text-[20px] sm:text-[18px] text-black/75 dark:text-white/80 shrink-0" />
                 <span className="hidden sm:inline text-sm font-medium text-black/75 dark:text-white/80">Resume</span>
               </a>
             </Tooltip>

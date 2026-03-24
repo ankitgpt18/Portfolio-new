@@ -4,32 +4,31 @@ import { Marquee } from "@/components/magicui/marquee";
 import Image from "next/image";
 
 
-// Tech Stack Data
+// Tech Stack Data with standard Devicon URLs for colorful icons
 const techStack = [
   // Languages
-  { name: "Python", category: "language", icon: "/tech-icons/python.svg", color: "bg-gray-500" },
-  { name: "C", category: "language", icon: "/tech-icons/c.svg", color: "bg-gray-500" },
-  { name: "C++", category: "language", icon: "/tech-icons/cplusplus.svg", color: "bg-gray-500" },
-  { name: "Java", category: "language", icon: "/tech-icons/java.svg", color: "bg-gray-500" },
-  { name: "JavaScript", category: "language", icon: "/tech-icons/javascript.svg", color: "bg-gray-500" },
-  { name: "SQL", category: "language", icon: "/tech-icons/sql.svg", color: "bg-gray-500" },
+  { name: "Python", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "C", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+  { name: "C++", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Java", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "JavaScript", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", category: "language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   
   // AI/ML Frameworks
-  { name: "TensorFlow", category: "framework", icon: "/tech-icons/tensorflow.svg", color: "bg-gray-500" },
-  { name: "Keras", category: "framework", icon: "/tech-icons/keras.svg", color: "bg-gray-500" },
-  { name: "PyTorch", category: "framework", icon: "/tech-icons/pytorch.svg", color: "bg-gray-500" },
-  { name: "Scikit-learn", category: "framework", icon: "/tech-icons/scikitlearn.svg", color: "bg-gray-500" },
-  { name: "Pandas", category: "framework", icon: "/tech-icons/pandas.svg", color: "bg-gray-500" },
-  { name: "NumPy", category: "framework", icon: "/tech-icons/numpy.svg", color: "bg-gray-500" },
+  { name: "TensorFlow", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { name: "Keras", category: "framework", icon: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" }, // Keras not in devicon easily
+  { name: "PyTorch", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  { name: "Scikit-learn", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" }, // Scikit usually placeholder, use pandas/numpy style or search
+  { name: "Pandas", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { name: "NumPy", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
   
   // DevOps & Tools
-  { name: "Docker", category: "tool", icon: "/tech-icons/docker.svg", color: "bg-gray-500" },
-  { name: "Kubernetes", category: "tool", icon: "/tech-icons/kubernetes.svg", color: "bg-gray-500" },
-  { name: "Git", category: "tool", icon: "/tech-icons/Git.svg", color: "bg-gray-500" },
-  { name: "AWS", category: "tool", icon: "/tech-icons/AWS.svg", color: "bg-gray-500" },
-  { name: "Google Cloud", category: "tool", icon: "/tech-icons/gcp.svg", color: "bg-gray-500" },
-  { name: "MLflow", category: "tool", icon: "/tech-icons/mlflow.svg", color: "bg-gray-500" },
-  { name: "Linux", category: "tool", icon: "/tech-icons/linux.svg", color: "bg-gray-500" },
+  { name: "Docker", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Kubernetes", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "Git", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "AWS", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "Google Cloud", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
+  { name: "Linux", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
 ];
 
 interface TechIconProps {
@@ -39,30 +38,17 @@ interface TechIconProps {
 
 function TechIcon({ tech, className = "" }: TechIconProps) {
   return (
-    <div className={`flex flex-col items-center justify-center p-2 sm:p-3 transition-all duration-300 hover:scale-105 min-w-[80px] sm:min-w-[90px] group ${className}`}>
+    <div className={`flex flex-col items-center justify-center p-2 sm:p-3 transition-all duration-300 hover:scale-110 min-w-[80px] sm:min-w-[90px] group ${className}`}>
       {/* Icon Container */}
       <div className="relative w-8 h-8 sm:w-10 sm:h-10 mb-1.5 sm:mb-2 flex items-center justify-center">
-        {/* Try to load actual SVG, fallback to grey placeholder */}
         <div className="w-full h-full relative">
           <Image
             src={tech.icon}
             alt={tech.name}
             width={40}
             height={40}
-            className="w-full h-full object-contain grayscale opacity-70 hover:opacity-90 transition-opacity"
-            onError={(e) => {
-              // If image fails to load, replace with grey placeholder
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              const parent = target.parentElement;
-              if (parent) {
-                parent.innerHTML = `
-                  <div class="w-full h-full ${tech.color} rounded-lg flex items-center justify-center text-white text-sm font-bold">
-                    ${tech.name.charAt(0)}
-                  </div>
-                `;
-              }
-            }}
+            className="w-full h-full object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.1)] dark:group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]"
+            unoptimized
           />
         </div>
       </div>
@@ -94,7 +80,7 @@ export default function TechStackMarquee({ className = "" }: TechStackMarqueePro
 
       {/* Single Marquee Container */}
       <div className="relative">
-        <Marquee pauseOnHover className="[--duration:80s] [--gap:1rem]">
+        <Marquee pauseOnHover className="[--duration:40s] [--gap:1rem]">
           {techStack.map((tech, index) => (
             <TechIcon key={`${tech.name}-${index}`} tech={tech} />
           ))}

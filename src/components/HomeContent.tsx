@@ -35,7 +35,7 @@ export default function NewHeroSection() {
           <Reveal delay={0.1}>
             <BannerSection
               bannerImage="/banner.jpg"
-              quote="You make your own luck if you stay at it long enough."
+              quote=""
             />
           </Reveal>
 
@@ -81,7 +81,12 @@ export default function NewHeroSection() {
 
                   {/* Spotify Player */}
                   <div className="mt-4 sm:mt-6 px-2 sm:px-0">
-                    <SpotifyPlayer />
+                    <SpotifyPlayer 
+                      songName="Pal Pal"
+                      artists="Talwiinder"
+                      trackUrl="https://open.spotify.com/track/4LMlVCXHJtCE9abhmn0mYo"
+                      albumArt="https://i.scdn.co/image/ab67616d00001e028f8f26a79857d9f78f8709e4"
+                    />
                   </div>
                 </ContentSection>
               </Reveal>
@@ -112,7 +117,7 @@ export default function NewHeroSection() {
                   </div>
                   <div className="px-4">
                     <div className="grid grid-cols-1 gap-4 sm:gap-3 sm:grid-cols-2 group">
-                      {projects.slice(0, 3).map((project) => (
+                      {projects.slice(0, 2).map((project) => (
                         <MasonryProjectCard key={project.id} project={project} />
                       ))}
                     </div>
