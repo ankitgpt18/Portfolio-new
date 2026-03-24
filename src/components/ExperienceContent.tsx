@@ -44,6 +44,7 @@ export default function ExperienceContent() {
         "Enhanced system robustness by adding fallback mechanisms and guardrails for safe AI responses.",
       ],
       href: "https://hanooman.ai",
+      logoUrl: "/hanooman.png",
     },
   ]
 
@@ -137,7 +138,7 @@ export default function ExperienceContent() {
                   <ul className="space-y-2.5 text-xs sm:text-sm opacity-80">
                     {exp.achievements.map((achievement, idx) => (
                       <li key={idx} className="flex gap-2.5 items-start">
-                        <span className="text-[#006FEE] shrink-0 leading-[1.75]">•</span>
+                        <span className="text-[#006FEE] shrink-0 mt-[5px] line-height-none">•</span>
                         <span>{achievement}</span>
                       </li>
                     ))}

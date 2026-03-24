@@ -43,7 +43,7 @@ export default function NewHeroSection() {
           <Reveal delay={0.2}>
             <ProfileHeader
               name="Ankit Gupta"
-              age="B.Tech Student"
+              age=""
               title="AI/ML Developer • Builder"
               profileImage="/pfp.jpg"
               socialLinks={{
@@ -85,7 +85,7 @@ export default function NewHeroSection() {
                       songName="Pal Pal"
                       artists="Talwiinder"
                       trackUrl="https://open.spotify.com/track/4LMlVCXHJtCE9abhmn0mYo"
-                      albumArt="https://i.scdn.co/image/ab67616d00001e028f8f26a79857d9f78f8709e4"
+                      albumArt="https://i1.sndcdn.com/artworks-nByu3mB8QPrC8i3B-DAnvYg-t500x500.jpg"
                     />
                   </div>
                 </ContentSection>

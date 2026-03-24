@@ -54,7 +54,7 @@ export default function ProfileHeader({
             {name}
           </h1>
           <p className="opacity-40 text-xs sm:text-sm">
-            {age} • {title}
+            {age}{age && title ? ' • ' : ''}{title}
           </p>
         </div>
         <div className="flex justify-start gap-1 sm:gap-2 mt-3 sm:mt-0 px-0">
