@@ -85,7 +85,7 @@ export default function NewHeroSection() {
                       songName="Pal Pal"
                       artists="Talwiinder"
                       trackUrl="https://open.spotify.com/track/4LMlVCXHJtCE9abhmn0mYo"
-                      albumArt="https://i1.sndcdn.com/artworks-nByu3mB8QPrC8i3B-DAnvYg-t500x500.jpg"
+                      albumArt="/palpal.png"
                     />
                   </div>
                 </ContentSection>
