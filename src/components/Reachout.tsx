@@ -3,7 +3,6 @@ import { FaLinkedin, FaXTwitter, FaGithub, FaPaperclip } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { Tooltip } from "./ui/tooltip-card";
 import Image from "next/image";
-import { VisitorCount } from "./VisitorCount";
 
 interface ReachoutProps {
   title?: string
@@ -178,13 +177,10 @@ export default function Reachout({
 
         {/* Footer Section */}
         <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-800">
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
-            <div className="text-sm dark:text-white/50 text-black/50 text-center sm:text-left">
+          <div className="text-sm dark:text-white/50 text-black/50 text-center sm:text-left">
               <p>Design & Developed by <span className="font-medium text-black/70 dark:text-white/70">Ankit Gupta</span></p>
               <p>© 2026. All rights reserved.</p>
             </div>
-            <VisitorCount />
-          </div>
         </div>
       </div>
     </div>

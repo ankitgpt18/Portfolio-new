@@ -124,8 +124,8 @@ export default function ExperienceContent() {
                 <div className="pt-4 border-t border-neutral-200 dark:border-neutral-800">
                   <ul className="space-y-2.5 text-xs sm:text-sm opacity-80">
                     {exp.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex gap-2.5">
-                        <span className="text-[#006FEE] shrink-0 mt-1.5">•</span>
+                      <li key={idx} className="flex gap-2.5 items-start">
+                        <span className="text-[#006FEE] shrink-0 leading-[1.75]">•</span>
                         <span>{achievement}</span>
                       </li>
                     ))}
