@@ -61,7 +61,7 @@ export default function ProfileHeader({
                 setTheme(newTheme)
               }
             }}
-            className="w-10 h-10 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full flex items-center justify-center touch-manipulation active:opacity-75 relative z-20 shadow-sm border border-black/5 dark:border-white/5"
+            className="w-8 h-8 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full flex items-center justify-center touch-manipulation active:opacity-75 relative z-20 shadow-sm border border-black/5 dark:border-white/5"
             aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
             style={{
               WebkitTapHighlightColor: 'transparent',
@@ -71,9 +71,9 @@ export default function ProfileHeader({
             }}
           >
             {theme === 'light' ? (
-              <Moon className="size-[18px]" aria-hidden="true" />
+              <Moon className="size-[16px]" aria-hidden="true" />
             ) : (
-              <Sun className="size-[18px]" aria-hidden="true" />
+              <Sun className="size-[16px]" aria-hidden="true" />
             )}
           </button>
         )}

@@ -50,6 +50,8 @@ export default function NewHeroSection() {
                 twitter: "https://x.com/100dys_",
                 github: "https://github.com/ankitgpt18",
                 linkedin: "https://www.linkedin.com/in/ankitxgpt/",
+                resume: "https://drive.google.com/file/d/1GjlXIC_LcOssH_Axza-SfZPZLA3bC3uA/view?usp=sharing",
+                mail: "mailto:ankitgupta18k@gmail.com",
               }}
             />
           </Reveal>
