@@ -1,5 +1,5 @@
 'use client';
-import { FaLinkedin, FaXTwitter, FaGithub, FaPaperclip } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter, FaGithub, FaPaperclip, FaEnvelope } from "react-icons/fa6";
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
 import * as React from 'react';
@@ -16,6 +16,7 @@ interface ProfileHeaderProps {
     resume?: string
     github?: string
     linkedin?: string
+    mail?: string
   }
 }
 
@@ -28,6 +29,7 @@ export default function ProfileHeader({
     twitter: "https://x.com/100dys_",
     github: "https://github.com/ankitgpt18",
     linkedin: "https://www.linkedin.com/in/ankitxgpt/",
+    mail: "mailto:ankitgupta18k@gmail.com",
   }
 }: ProfileHeaderProps) {
   const { theme, setTheme } = useTheme();
@@ -155,6 +157,29 @@ export default function ProfileHeader({
               </TooltipTrigger>
               <TooltipContent>
                 LinkedIn
+              </TooltipContent>
+            </Tooltip>
+          )}
+          {socialLinks.mail && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div className="w-8 h-8 sm:w-8 sm:h-8 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full flex items-center justify-center">
+                  <a
+                    className="touch-manipulation active:opacity-75 flex items-center justify-center w-full h-full"
+                    href={socialLinks.mail}
+                    style={{
+                      WebkitTapHighlightColor: 'transparent',
+                      WebkitTouchCallout: 'none',
+                      WebkitUserSelect: 'none',
+                      userSelect: 'none'
+                    }}
+                  >
+                    <FaEnvelope className="text-[16px] sm:text-[16px] text-black/75 dark:text-white/80" />
+                  </a>
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                Mail
               </TooltipContent>
             </Tooltip>
           )}

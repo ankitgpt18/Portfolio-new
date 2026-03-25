@@ -180,7 +180,6 @@ export const Tooltip = ({
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // Toggle visibility on click for mobile devices
     if (window.matchMedia("(hover: none)").matches) {
-      e.preventDefault();
       if (isVisible) {
         setIsVisible(false);
         setMouse({ x: 0, y: 0 });

@@ -9,9 +9,9 @@ export default function CallToAction() {
         <div className="absolute top-4 left-4 text-6xl sm:text-7xl text-neutral-200 dark:text-neutral-800 font-serif leading-none select-none">&quot;</div>
 
         <div className="relative z-10 pt-6 sm:pt-8">
-          <p className="text-neutral-600 dark:text-neutral-400 text-base sm:text-lg italic font-[family-name:var(--font-instrument-serif)] mb-4">
-            &quot;Man is made by his belief. As he believes, so he is.&quot;
-          </p>
+          <h2 className="font-[family-name:var(--font-instrument-serif)] italic text-3xl sm:text-5xl tracking-tight mb-4 text-black dark:text-white leading-[1.1]">
+          &quot;You are only entitled to the action, never to its fruits.&quot;
+        </h2>
           <p className="text-right text-neutral-800 dark:text-neutral-200 font-medium">
             — Bhagavad Gita
           </p>

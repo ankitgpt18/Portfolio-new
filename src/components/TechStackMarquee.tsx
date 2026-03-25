@@ -19,8 +19,8 @@ const techStack = [
   { name: "Keras", category: "framework", icon: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" }, // Keras not in devicon easily
   { name: "PyTorch", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
   { name: "Scikit-learn", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" }, // Scikit usually placeholder, use pandas/numpy style or search
-  { name: "Pandas", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
   { name: "NumPy", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+  { name: "Pandas", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
   
   // DevOps & Tools
   { name: "Docker", category: "tool", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
