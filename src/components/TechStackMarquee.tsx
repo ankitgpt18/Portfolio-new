@@ -18,7 +18,7 @@ const techStack = [
   { name: "TensorFlow", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
   { name: "Keras", category: "framework", icon: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" }, // Keras not in devicon easily
   { name: "PyTorch", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-  { name: "Scikit-learn", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" }, // Scikit usually placeholder, use pandas/numpy style or search
+  { name: "Scikit-learn", category: "framework", icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
   { name: "NumPy", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
   { name: "Pandas", category: "framework", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
   

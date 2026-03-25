@@ -10,13 +10,16 @@ export default function CallToAction() {
 
         <div className="relative z-10 pt-6 sm:pt-8">
           <h2 className="font-[family-name:var(--font-instrument-serif)] italic text-3xl sm:text-5xl tracking-tight mb-4 text-black dark:text-white leading-[1.1]">
-          &quot;You are only entitled to the action, never to its fruits.&quot;
-        </h2>
+            &quot;Karmanye vadhikaraste ma phaleshu kadachana.&quot;
+          </h2>
           <p className="text-right text-neutral-800 dark:text-neutral-200 font-medium">
-            — Bhagavad Gita
+            - Bhagavad Gita
           </p>
         </div>
       </div>
     </div>
   )
 }
+
+
+
