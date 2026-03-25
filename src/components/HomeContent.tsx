@@ -98,7 +98,7 @@ export default function NewHeroSection() {
               {/* Experience Section */}
               <Reveal delay={0.1}>
                 <div className="sm:px-12 py-2">
-                  <h2 className="text-base sm:text-xl mb-3 opacity-20 mt-4 sm:mt-6 px-4 font-[family-name:var(--font-instrument-serif)]">Professional Experience</h2>
+                  <h2 className="text-base sm:text-xl mb-3 opacity-60 mt-4 sm:mt-6 px-4 font-[family-name:var(--font-instrument-serif)] dark:text-white text-black font-semibold">Professional Experience</h2>
                   <div className="px-4">
                     <ExperienceContent />
                   </div>
@@ -113,7 +113,7 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <div className="sm:px-12 py-2">
                   <div className="px-4 mb-4 sm:mb-6 mt-4 sm:mt-6">
-                    <h2 className="text-base sm:text-xl opacity-20 font-[family-name:var(--font-instrument-serif)]">Projects / Works</h2>
+                    <h2 className="text-base sm:text-xl opacity-60 font-[family-name:var(--font-instrument-serif)] dark:text-white text-black font-semibold">Projects / Works</h2>
                   </div>
                   <div className="px-4">
                     <div className="grid grid-cols-1 gap-4 sm:gap-3 sm:grid-cols-2 group">
@@ -152,7 +152,7 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <div className="sm:px-12 py-2">
                   <div className="px-4 mb-4 sm:mb-6 mt-4 sm:mt-6">
-                    <h2 className="text-base sm:text-xl opacity-20 font-[family-name:var(--font-instrument-serif)]">Thoughts</h2>
+                    <h2 className="text-base sm:text-xl opacity-60 font-[family-name:var(--font-instrument-serif)] dark:text-white text-black font-semibold">Thoughts</h2>
                   </div>
                   <div className="px-4">
                     <div className="space-y-0 group">
