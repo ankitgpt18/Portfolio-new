@@ -2,97 +2,63 @@ import { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
-    id: "cognitivegames",
-    title: "Cognitive Games",
-    description: "A brain games platform, designed to help students prepare for placement game rounds. Built with Next.js, TypeScript, and Tailwind CSS.",
-    longDescription: "A brain games platform designed to help students prepare for placement game rounds.\n\nBuilt with Next.js, TypeScript, Tailwind CSS, Framer Motion, and PostgreSQL.\n\nFeatures:\n• Multiple cognitive game types for placement preparation\n• Real-time scoring and progress tracking\n• Responsive design with smooth animations",
-    liveLink: "https://games.ankitgupta.dev/",
-    githubLink: "https://github.com/ankitgpt18/CognitiveGamesWeb",
+    id: "inlandroute",
+    title: "InlandRoute",
+    description: "A system built to predict river navigability using satellite imagery and water level data. It helps plan safe inland waterway routes.",
+    longDescription: "A system that predicts river navigability using satellite imagery and water level data.\n\nBuilt with FastAPI, PyTorch, and Google Earth Engine.\n\nFeatures:\n• River navigability forecasting\n• Risk alerts and seasonal calendars\n• Real-time Mapbox GL dashboard",
+    liveLink: "",
+    githubLink: "https://github.com/ankitgpt18/aidstl",
     image: "/banner.jpg",
     tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "PostgreSQL"
+      "FastAPI",
+      "PyTorch",
+      "Earth Engine",
+      "Next.js"
     ],
   },
   {
-    id: "postavid",
-    title: "PostaVid",
-    description: "A video-sharing platform where users can create accounts, upload, and share videos. Uses MongoDB and ImageKit for smooth video storage and streaming.",
-    longDescription: "A video-sharing platform where users can create accounts, upload, and share videos.\n\nUses MongoDB and ImageKit for smooth video storage and streaming.\n\nFeatures:\n• User authentication and account management\n• Video upload with ImageKit integration\n• Smooth streaming and sharing capabilities",
-    liveLink: "https://playavid.vercel.app/",
-    githubLink: "https://github.com/ankitgpt18/playavid",
+    id: "barodago",
+    title: "BarodaGo",
+    description: "A civic engagement platform designed for modern municipal infrastructure management. It includes a citizen app, admin panel, and a worker app.",
+    longDescription: "A civic engagement platform designed to help manage municipal infrastructure in Vadodara.\n\nIt features a triple app ecosystem comprising a Citizen App, Admin Panel, and Worker App.\n\nFeatures:\n• Gesture based reporting and community feed\n• Mapbox digital twin for administrative oversight\n• Gamified tasks and civic crowdfunding",
+    liveLink: "",
+    githubLink: "https://github.com/ankitgpt18/BarodaGo",
     image: "/banner.jpg",
     tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB"
+      "Flutter",
+      "FastAPI",
+      "PostgreSQL",
+      "React"
     ],
   },
   {
-    id: "planyourmeal",
-    title: "PlanYourMeal",
-    description: "A cross-platform meal planning app built with Flutter. It helps users organize meals, generate shopping lists, and maintain a balanced diet with recipe suggestions and nutritional insights.",
-    longDescription: "A cross-platform meal planning app built with Flutter.\n\nHelps users organize meals, generate shopping lists, and maintain a balanced diet with recipe suggestions and nutritional insights.\n\nFeatures:\n• Meal planning and organization\n• Shopping list generation\n• Recipe suggestions with nutritional insights",
-    liveLink: "https://github.com/ankitgpt18/PlanYourMeal",
-    githubLink: "https://github.com/ankitgpt18/PlanYourMeal",
+    id: "echoaid",
+    title: "EchoAid",
+    description: "An offline mobile app that helps hearing impaired users by transcribing real time conversations into live subtitles.",
+    longDescription: "An offline first mobile app that helps hearing impaired users understand real time conversations by transcribing speech into live subtitles.\n\nIt runs completely on device for maximum privacy without requiring an internet connection.\n\nFeatures:\n• Real time speech transcription\n• Emotion awareness and multi speaker support\n• Dark mode and conversation history",
+    liveLink: "",
+    githubLink: "https://github.com/ankitgpt18/EchoAid",
     image: "/banner.jpg",
     tags: [
       "Flutter",
       "Dart",
-      "Firebase"
+      "Local LLMs"
     ],
   },
   {
-    id: "quickpay",
-    title: "Quick Pay",
-    description: "A responsive mock payment app that simulates smooth, secure transactions for demos. Built with Next.js, TypeScript, Tailwind, Node.js, Express, and MongoDB.",
-    longDescription: "A responsive mock payment app that simulates smooth, secure transactions for demos.\n\nBuilt with a full-stack architecture using React, Tailwind, Node.js, and MongoDB.\n\nFeatures:\n• Simulated payment processing\n• Responsive and modern UI\n• REST API backend with MongoDB storage",
-    liveLink: "https://pay.ankitgupta.dev/",
-    githubLink: "https://github.com/ankitgpt18/QuickPay",
+    id: "gitbell",
+    title: "GitBell",
+    description: "A lightweight browser extension that monitors GitHub repositories and alerts you the moment new issues appear.",
+    longDescription: "A browser extension that monitors GitHub repositories and gives you instant alerts when new issues pop up.\n\nBuilt for developers who want to stay ahead in open source contributions and project maintenance.\n\nFeatures:\n• Real time issue monitoring across multiple repositories\n• Instant browser notifications with direct links\n• Smart detection of beginner friendly issues",
+    liveLink: "",
+    githubLink: "https://github.com/ankitgpt18/GitBell",
     image: "/banner.jpg",
     tags: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "MongoDB",
-      "REST API"
+      "Chrome Extension",
+      "JavaScript",
+      "GitHub API"
     ],
-  },
-  {
-    id: "dropithere",
-    title: "DropIthere",
-    description: "Created a platform to organize content like Twitter threads and YouTube videos into custom playlists, with shareable links for easy and structured dashboard sharing.",
-    longDescription: "A platform to organize content like Twitter threads and YouTube videos into custom playlists.\n\nShareable links for easy and structured dashboard sharing.\n\nFeatures:\n• Custom playlist creation from multiple content sources\n• Shareable dashboard links\n• Content organization and management",
-    liveLink: "https://dropithere.ankitgupta.dev/",
-    githubLink: "https://github.com/ankitgpt18/dropithere",
-    image: "/banner.jpg",
-    tags: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "MongoDB",
-      "REST API"
-    ],
-  },
-  {
-    id: "getevent",
-    title: "GetEvent",
-    description: "A platform to discover and manage events easily. Users can explore upcoming events, view details, and stay updated, making event discovery more seamless and engaging.",
-    longDescription: "A platform to discover and manage events easily.\n\nUsers can explore upcoming events, view details, and stay updated.\n\nFeatures:\n• Event discovery and exploration\n• Detailed event views\n• Seamless and engaging user experience",
-    liveLink: "https://get-event.vercel.app/",
-    githubLink: "https://github.com/ankitgpt18/GetEvent",
-    image: "/banner.jpg",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB"
-    ],
-  },
+  }
 ];
 
 export const getProjectById = (id: string): Project | undefined => {
