@@ -50,7 +50,7 @@ export default function NewHeroSection() {
                 twitter: "https://x.com/100dys_",
                 github: "https://github.com/ankitgpt18",
                 linkedin: "https://www.linkedin.com/in/ankitxgpt/",
-                resume: "https://drive.google.com/file/d/1GjlXIC_LcOssH_Axza-SfZPZLA3bC3uA/view?usp=sharing",
+                resume: "https://drive.google.com/file/d/1FVmq6acEjRuB-MZUz3qTBeCuZYjX1zsW/view?usp=sharing",
                 mail: "mailto:ankitgupta18k@gmail.com",
               }}
             />
@@ -78,7 +78,7 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <ContentSection className="pb-6 sm:pb-8 pt-4 sm:pt-6 px-2 sm:px-0">
                   <ContentParagraph className="mb-4 text-base sm:text-lg">
-                    <span className="font-medium dark:text-white text-black">I build clean, interactive ML systems.</span> Whether it&apos;s models, pipelines, RAG systems, or AI agents — I work across the entire AI development lifecycle. From data to deployment, I care less about technology debates and more about delivering intelligent, real-world products that people love using.
+                    <span className="font-medium dark:text-white text-black">I build clean, interactive ML systems.</span> Whether it&apos;s models, pipelines, RAG systems, or AI agents, I work across the entire AI development lifecycle. From data to deployment, I care less about technology debates and more about delivering intelligent, real-world products that people love using.
                   </ContentParagraph>
 
                   {/* Spotify Player */}
