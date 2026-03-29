@@ -23,7 +23,7 @@ export const projects: Project[] = [
     longDescription: "A civic engagement platform designed to help manage municipal infrastructure in Vadodara.\n\nIt features a triple app ecosystem comprising a Citizen App, Admin Panel, and Worker App.\n\nFeatures:\n• Gesture based reporting and community feed\n• Mapbox digital twin for administrative oversight\n• Gamified tasks and civic crowdfunding",
     liveLink: "",
     githubLink: "https://github.com/ankitgpt18/BarodaGo",
-    image: "/banner.jpg",
+    image: "/barodago.jpg",
     tags: [
       "Flutter",
       "FastAPI",
