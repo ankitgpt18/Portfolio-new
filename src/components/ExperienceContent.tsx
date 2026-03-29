@@ -33,19 +33,7 @@ export default function ExperienceContent() {
       href: "https://zeru.com",
       logoUrl: "/zeru.png",
     },
-    {
-      company: "Hanooman AI",
-      position: "LLM Intern",
-      duration: "May 2025 – June 2025",
-      description: "Engineered context-aware retrieval strategies to minimize hallucinations and improve answer relevance. Optimized token usage and inference cost, achieving efficient LLM deployment at scale. Enhanced system robustness by adding fallback mechanisms and guardrails for safe AI responses.",
-      achievements: [
-        "Engineered context-aware retrieval strategies to minimize hallucinations and improve answer relevance.",
-        "Optimized token usage and inference cost, achieving efficient LLM deployment at scale.",
-        "Enhanced system robustness by adding fallback mechanisms and guardrails for safe AI responses.",
-      ],
-      href: "https://hanooman.ai",
-      logoUrl: "/hanooman.png",
-    },
+
   ]
 
   const toggleExpanded = (company: string) => {
