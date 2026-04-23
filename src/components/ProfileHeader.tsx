@@ -117,21 +117,28 @@ export default function ProfileHeader({
             <Tooltip>
               <TooltipTrigger asChild>
                 <div className="w-8 h-8 sm:w-8 sm:h-8 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full flex items-center justify-center">
-                  <a
-                    className={`touch-manipulation active:opacity-75 flex items-center justify-center w-full h-full ${socialLinks.twitter === '#' ? 'cursor-default' : ''}`}
-                    href={socialLinks.twitter}
-                    onClick={socialLinks.twitter === '#' ? (e) => e.preventDefault() : undefined}
-                    target={socialLinks.twitter === '#' ? undefined : "_blank"}
-                    rel={socialLinks.twitter === '#' ? undefined : "noopener noreferrer"}
-                    style={{
-                      WebkitTapHighlightColor: 'transparent',
-                      WebkitTouchCallout: 'none',
-                      WebkitUserSelect: 'none',
-                      userSelect: 'none'
-                    }}
-                  >
-                    <FaXTwitter className="text-[16px] sm:text-[16px] text-black/75 dark:text-white/80" />
-                  </a>
+                  {socialLinks.twitter === '#' ? (
+                    <div 
+                      className="flex items-center justify-center w-full h-full cursor-default pointer-events-none"
+                    >
+                      <FaXTwitter className="text-[16px] sm:text-[16px] text-black/75 dark:text-white/80" />
+                    </div>
+                  ) : (
+                    <a
+                      className="touch-manipulation active:opacity-75 flex items-center justify-center w-full h-full"
+                      href={socialLinks.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        WebkitTapHighlightColor: 'transparent',
+                        WebkitTouchCallout: 'none',
+                        WebkitUserSelect: 'none',
+                        userSelect: 'none'
+                      }}
+                    >
+                      <FaXTwitter className="text-[16px] sm:text-[16px] text-black/75 dark:text-white/80" />
+                    </a>
+                  )}
                 </div>
               </TooltipTrigger>
               <TooltipContent>
