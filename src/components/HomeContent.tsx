@@ -18,7 +18,7 @@ import { faqs } from '@/data/blogs'
 import { FAQCard } from './FAQCard'
 import GitHubActivity from './GitHubActivity'
 import AboutMe from './AboutMe'
-import SpotifyPlayer from './SpotifyPlayer'
+
 
 
 export default function NewHeroSection() {
@@ -77,19 +77,9 @@ export default function NewHeroSection() {
               {/* About Section */}
               <Reveal delay={0.1}>
                 <ContentSection className="pb-6 sm:pb-8 pt-4 sm:pt-6 px-2 sm:px-0">
-                  <ContentParagraph className="mb-4 text-base sm:text-lg">
+                  <ContentParagraph className="text-base sm:text-lg">
                     <span className="font-medium dark:text-white text-black">I build clean, interactive ML systems.</span> Whether it&apos;s models, pipelines, RAG systems, or AI agents, I work across the entire AI development lifecycle. From data to deployment, I care less about technology debates and more about delivering intelligent, real-world products that people love using.
                   </ContentParagraph>
-
-                  {/* Spotify Player */}
-                  <div className="mt-4 sm:mt-6 px-2 sm:px-0">
-                    <SpotifyPlayer 
-                      songName="Pal Pal"
-                      artists="Talwiinder"
-                      trackUrl="https://open.spotify.com/track/4LMlVCXHJtCE9abhmn0mYo"
-                      albumArt="/palpal.png"
-                    />
-                  </div>
                 </ContentSection>
               </Reveal>
 
