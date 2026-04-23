@@ -118,10 +118,11 @@ export default function ProfileHeader({
               <TooltipTrigger asChild>
                 <div className="w-8 h-8 sm:w-8 sm:h-8 bg-black/5 dark:bg-white/10 has-hover:hover:bg-black/10 dark:has-hover:hover:bg-white/20 transition-[colors] duration-200 rounded-full flex items-center justify-center">
                   <a
-                    className="touch-manipulation active:opacity-75 flex items-center justify-center w-full h-full"
+                    className={`touch-manipulation active:opacity-75 flex items-center justify-center w-full h-full ${socialLinks.twitter === '#' ? 'cursor-default' : ''}`}
                     href={socialLinks.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={socialLinks.twitter === '#' ? (e) => e.preventDefault() : undefined}
+                    target={socialLinks.twitter === '#' ? undefined : "_blank"}
+                    rel={socialLinks.twitter === '#' ? undefined : "noopener noreferrer"}
                     style={{
                       WebkitTapHighlightColor: 'transparent',
                       WebkitTouchCallout: 'none',

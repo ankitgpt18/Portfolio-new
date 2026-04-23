@@ -47,7 +47,7 @@ export default function NewHeroSection() {
               title="AI/ML Developer • Builder"
               profileImage="/pfp.jpg"
               socialLinks={{
-                twitter: "https://x.com/100dys_",
+                twitter: "#",
                 github: "https://github.com/ankitgpt18",
                 linkedin: "https://www.linkedin.com/in/ankitxgpt/",
                 resume: "https://drive.google.com/file/d/1FVmq6acEjRuB-MZUz3qTBeCuZYjX1zsW/view?usp=sharing",
