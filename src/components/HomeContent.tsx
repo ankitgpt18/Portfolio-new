@@ -35,6 +35,7 @@ export default function NewHeroSection() {
           <Reveal delay={0.1}>
             <BannerSection
               bannerImage="/banner.jpg"
+              bannerVideo="/banner_vid.mp4"
               quote=""
             />
           </Reveal>
@@ -47,7 +48,7 @@ export default function NewHeroSection() {
               title="AI/ML Developer • Builder"
               profileImage="/pfp.jpg"
               socialLinks={{
-                twitter: "#",
+                twitter: "https://x.com/100dys_",
                 github: "https://github.com/ankitgpt18",
                 linkedin: "https://www.linkedin.com/in/ankitxgpt/",
                 resume: "https://drive.google.com/file/d/1FVmq6acEjRuB-MZUz3qTBeCuZYjX1zsW/view?usp=sharing",

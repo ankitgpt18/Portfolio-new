@@ -38,7 +38,7 @@ export const projects: Project[] = [
     longDescription: "An offline first mobile app that helps hearing impaired users understand real time conversations by transcribing speech into live subtitles.\n\nIt runs completely on device for maximum privacy without requiring an internet connection.\n\nFeatures:\n• Real time speech transcription\n• Emotion awareness and multi speaker support\n• Dark mode and conversation history",
     liveLink: "",
     githubLink: "https://github.com/ankitgpt18/EchoAid",
-    image: "/banner.jpg",
+    image: "/echoaid.png",
     tags: [
       "Flutter",
       "Dart",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     longDescription: "A browser extension that monitors GitHub repositories and gives you instant alerts when new issues pop up.\n\nBuilt for developers who want to stay ahead in open source contributions and project maintenance.\n\nFeatures:\n• Real time issue monitoring across multiple repositories\n• Instant browser notifications with direct links\n• Smart detection of beginner friendly issues",
     liveLink: "",
     githubLink: "https://github.com/ankitgpt18/GitBell",
-    image: "/banner.jpg",
+    image: "/gitbell.png",
     tags: [
       "Chrome Extension",
       "JavaScript",

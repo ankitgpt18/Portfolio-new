@@ -21,6 +21,19 @@ export default function ExperienceContent() {
 
   const experiences: ExperienceItem[] = [
     {
+      company: "CRIS",
+      position: "ML Intern",
+      duration: "May 2026 – Present",
+      description: "Working on machine learning projects at the Centre for Railway Information Systems (CRIS).",
+      achievements: [
+        "Working on machine learning projects at the Centre for Railway Information Systems (CRIS).",
+        "Developing and deploying ML models for railway data analysis and optimization.",
+        "Collaborating with cross-functional teams on data-driven solutions.",
+      ],
+      href: "https://cris.org.in",
+      logoUrl: "/cris.png",
+    },
+    {
       company: "Zeru",
       position: "AI Intern",
       duration: "Aug 2025 – Oct 2025",
