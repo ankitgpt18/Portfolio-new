@@ -28,7 +28,7 @@ export default function ProfileHeader({
   socialLinks = {
     twitter: "https://x.com/100dys_",
     github: "https://github.com/ankitgpt18",
-    linkedin: "https://www.linkedin.com/in/ankitxgpt/",
+    linkedin: "https://www.linkedin.com/in/ankitgpt18/",
     resume: "https://drive.google.com/file/d/1FVmq6acEjRuB-MZUz3qTBeCuZYjX1zsW/view?usp=sharing",
     mail: "mailto:ankitgupta18k@gmail.com",
   }

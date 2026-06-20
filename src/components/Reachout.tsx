@@ -24,7 +24,7 @@ export default function Reachout({
   socialLinks = {
     twitter: "https://x.com/100dys_",
     github: "https://github.com/ankitgpt18",
-    linkedin: "https://www.linkedin.com/in/ankitxgpt/",
+    linkedin: "https://www.linkedin.com/in/ankitgpt18/",
     leetcode: "https://leetcode.com/u/ankitgpt/",
     kaggle: "https://www.kaggle.com/ankitxgpt",
   }
